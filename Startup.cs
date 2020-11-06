@@ -17,6 +17,8 @@ namespace leafletDemo
 {
     public class Startup
     {
+        // string DefaultConnection = "server=hermes;port=3306;database=estacions;uid=estacio;password=estacio";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,7 +30,7 @@ namespace leafletDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
+            // services.AddDbContext<EstacionsContext>(options => options.UseMySQL(Configuration.GetConnectionString(DefaultConnection)));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
