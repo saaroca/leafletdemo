@@ -56,10 +56,7 @@ C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\leafletDemo.RazorAssemblyInf
 C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\leafletDemo.TagHelpers.input.cache
 C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\leafletDemo.TagHelpers.output.cache
 C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\leafletDemo.RazorCoreGenerate.cache
-C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\Razor\Views\Estacions\Create.cshtml.g.cs
-C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\Razor\Views\Estacions\Delete.cshtml.g.cs
 C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\Razor\Views\Estacions\Details.cshtml.g.cs
-C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\Razor\Views\Estacions\Edit.cshtml.g.cs
 C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\Razor\Views\Estacions\Index.cshtml.g.cs
 C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
@@ -77,3 +74,4 @@ C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\staticwebassets\leafletDemo.
 C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\leafletDemo.dll
 C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\leafletDemo.pdb
 C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\leafletDemo.genruntimeconfig.cache
+C:\Users\saroca\leafletDemo\obj\Debug\netcoreapp3.1\Razor\Views\Estacions\Data.cshtml.g.cs
