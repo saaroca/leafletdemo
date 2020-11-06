@@ -24,42 +24,38 @@ namespace leafletDemo.Controllers
 
         EstacionsDataAccessLayer objecteEstacions = new EstacionsDataAccessLayer();
 
-        // [HttpGet]
-        // public IActionResult Details(int? id)
-        // {
-        //     if (id == null)
-        //     {
-        //         return NotFound();
-        //     }
-
-        //     Estacions estacions = objecteEstacions.GetEstacionsData(id);
-
-        //     if (estacions == null)
-        //     {
-        //         return NotFound();
-        //     }
-        //     return View(estacions);
-        // }
-
         public IActionResult Index()
         {
-            llistaEstacions = _context.Estacio.Where(x => x.dateTime == 1545629280).ToList();
-            // EstacionsDataAccessLayer e = new EstacionsDataAccessLayer();
-            // llistaEstacions = objecteEstacions.GetAllEstacions().ToList();
-            // DataConvert(llistaEstacions);
+            InitializeDatePicker();
+            FindDate();
             return View(llistaEstacions);
         }
 
 
+        public void InitializeDatePicker()
+        {
+            DatePicker datePickerFor2009 = new DatePicker();
+            datePickerFor2009.SelectedDate = new DateTime(2009, 3, 23);
+            datePickerFor2009.DisplayDateStart = new DateTime(2009, 1, 1);
+            datePickerFor2009.DisplayDateEnd = new DateTime(2009, 12, 31);
+            datePickerFor2009.SelectedDateFormat = DatePickerFormat.Long;
+            datePickerFor2009.FirstDayOfWeek = DayOfWeek.Monday;
 
-        // public void DataConvert(List<Estacions> llistaEstacions)
-        // {
-        //     DateTime dataHuma = new DateTime(1970, 1, 1, 0, 0, 0, 0);
-        //     foreach (Estacions e in llistaEstacions)
-        //     {
-        //         e.dataHuma = dataHuma.AddSeconds(e.dateTime);
-        //     }
-        // }
+        }
+        public void FindDate()
+        {
+            llistaEstacions = _context.Estacio.Where(x => x.dateTime == 1512968400).ToList();
+            DataConvert(llistaEstacions);
+        }
+
+        public void DataConvert(List<Estacions> llistaEstacions)
+        {
+            DateTime dataHuma = new DateTime(1970, 1, 1, 0, 0, 0, 0);
+            foreach (Estacions e in llistaEstacions)
+            {
+                e.dataHuma = dataHuma.AddSeconds(Convert.ToDouble((e.dateTime)));
+            }
+        }
 
 
     }

@@ -10,6 +10,21 @@
             <th> @Html.DisplayNameFor(model => model.usUnits) </th>
             <th> @Html.DisplayNameFor(model => model.arcInt) </th>
             <th> @Html.DisplayNameFor(model => model.barometer) </th>
+            <th> @Html.DisplayNameFor(model => model.pressure) </th>
+            <th> @Html.DisplayNameFor(model => model.altimeter) </th>
+            <th> @Html.DisplayNameFor(model => model.inTemp) </th>
+            <th> @Html.DisplayNameFor(model => model.outTemp) </th>
+            <th> @Html.DisplayNameFor(model => model.inHumidity) </th>
+            <th> @Html.DisplayNameFor(model => model.outHumidity) </th>
+            <th> @Html.DisplayNameFor(model => model.windSpeed) </th>
+            <th> @Html.DisplayNameFor(model => model.windDir) </th>
+            <th> @Html.DisplayNameFor(model => model.windGust) </th>
+            <th> @Html.DisplayNameFor(model => model.windGustDir) </th>
+            <th> @Html.DisplayNameFor(model => model.rainRate) </th>
+            <th> @Html.DisplayNameFor(model => model.rain) </th>
+            <th> @Html.DisplayNameFor(model => model.dewpoint) </th>
+            <th> @Html.DisplayNameFor(model => model.windchill) </th>
+            <th> @Html.DisplayNameFor(model => model.heatindex) </th>
             <th></th>
         </tr>
     </thead>
@@ -20,9 +35,29 @@
                 <td> @Html.DisplayFor(modelItem => item.usUnits) </td>
                 <td> @Html.DisplayFor(modelItem => item.arcInt) </td>
                 <td> @Html.DisplayFor(modelItem => item.barometer) </td>
+                <td> @Html.DisplayFor(modelItem => item.pressure) </td>
+                <td> @Html.DisplayFor(modelItem => item.altimeter) </td>
+                <td> @Html.DisplayFor(modelItem => item.inTemp) </td>
+                <td> @Html.DisplayFor(modelItem => item.outTemp) </td>
+                <td> @Html.DisplayFor(modelItem => item.inHumidity) </td>
+                <td> @Html.DisplayFor(modelItem => item.outHumidity) </td>
+                <td> @Html.DisplayFor(modelItem => item.windSpeed) </td>
+                <td> @Html.DisplayFor(modelItem => item.windDir) </td>
+                <td> @Html.DisplayFor(modelItem => item.windGust) </td>
+                <td> @Html.DisplayFor(modelItem => item.windGustDir) </td>
+                <td> @Html.DisplayFor(modelItem => item.rainRate) </td>
+                <td> @Html.DisplayFor(modelItem => item.rain) </td>
+                <td> @Html.DisplayFor(modelItem => item.dewpoint) </td>
+                <td> @Html.DisplayFor(modelItem => item.windchill) </td>
+                <td> @Html.DisplayFor(modelItem => item.heatindex) </td>
                 <td> <a asp-action="Edit" asp-route-id="@item.dateTime">Edit</a> | <a asp-action="Details"
                         asp-route-id="@item.dateTime">Details</a> | <a asp-action="Delete" asp-route-id="@item.dateTime">Delete</a>
                 </td>
             </tr>
         } </tbody>
+
+        <DatePicker SelectedDateFormat="Long" SelectedDate="6/11/20"
+                  DisplayDateStart="1/01/00" DisplayDateEnd="6/11/20" 
+                  FirstDayOfWeek="Monday"/>
 </table>
+

@@ -14392,11 +14392,6 @@
   "RootNamespace": "leafletDemo",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\saroca\\leafletDemo\\Views\\Estacions\\Delete.cshtml",
-      "TargetPath": "Views\\Estacions\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\saroca\\leafletDemo\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -14417,6 +14412,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\saroca\\leafletDemo\\Views\\Estacions\\Data.cshtml",
+      "TargetPath": "Views\\Estacions\\Data.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\saroca\\leafletDemo\\Views\\Estacions\\Details.cshtml",
       "TargetPath": "Views\\Estacions\\Details.cshtml",
       "FileKind": "mvc"
@@ -14432,18 +14432,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\saroca\\leafletDemo\\Views\\Estacions\\Edit.cshtml",
-      "TargetPath": "Views\\Estacions\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\saroca\\leafletDemo\\Views\\Estacions\\Index.cshtml",
       "TargetPath": "Views\\Estacions\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\saroca\\leafletDemo\\Views\\Estacions\\Create.cshtml",
-      "TargetPath": "Views\\Estacions\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
